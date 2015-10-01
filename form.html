@@ -1,0 +1,37 @@
+<!-- YOU CAN REMOVE THE STYLE BELOW -->
+<style>
+p{padding:0;margin:0;}
+body{padding:0;margin:0;}
+</style>
+<!-- STYLE ONLY FOR DEMO - REMOVE -->
+
+<form action="mail.php" method="POST">
+<p>Name</p> <input type="text" name="name">
+<p>Email</p> <input type="text" name="email">
+<p>Phone</p> <input type="text" name="phone">
+
+<p>Request Phone Call:</p>
+Yes:<input type="checkbox" value="Yes" name="call"><br />
+No:<input type="checkbox" value="No" name="call"><br />
+<p>Priority</p>
+<select name="priority" size="1" style="color: inherit;">
+<option value="Low" style="color: green;"><b>Low</b></option>
+<option value="Normal" style="color: yellow;"><b>Medium</b></option>
+<option value="High" style="color: red;"><b>High</b></option>
+</select>
+<br />
+
+<p>Department</p>
+<select name="type" size="1">
+<option value="update">Web Development</option>
+<option value="change">Software Development</option>
+<option value="addition">Hosting</option>
+<option value="new">Graphics Design</option>
+<option value="new">App Development</option>
+<option value="new">Other Enquiry</option>
+</select>
+<br />
+
+<p>Message</p><textarea name="message" rows="6" cols="25"></textarea><br />
+<input type="submit" value="Send"><input type="reset" value="Clear">
+</form>
